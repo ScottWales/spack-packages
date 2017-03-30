@@ -1,0 +1,50 @@
+compilers:
+- compiler:
+    spec: intel@17.0.1.132
+    operating_system: centos6
+    target: x86_64
+    modules:
+      - intel-fc/17.0.1.132
+      - intel-cc/17.0.1.132
+    paths:
+        cc: /apps/intel-ct/cc-wrapper/icc
+        cxx: /apps/intel-ct/cc-wrapper/icpc
+        f77: /apps/intel-ct/fc-wrapper/ifort
+        fc: /apps/intel-ct/fc-wrapper/ifort
+    preferred: True
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: []
+    operating_system: centos6
+    paths:
+      cc: /opt/bin/gcc
+      cxx: /opt/bin/g++
+      f77: /opt/bin/gfortran
+      fc: /opt/bin/gfortran
+    spec: gcc@4.4.7
+    target: x86_64
+- compiler:
+    spec: intel@12.1.9.293
+    operating_system: centos6
+    target: x86_64
+    modules:
+      - intel-fc/12.1.9.293
+      - intel-cc/12.1.9.293
+    paths:
+        cc: /apps/intel-ct/cc-wrapper/icc
+        cxx: /apps/intel-ct/cc-wrapper/icpc
+        f77: /apps/intel-ct/fc-wrapper/ifort
+        fc: /apps/intel-ct/fc-wrapper/ifort
+- compiler:
+    spec: gcc@6.2.0
+    operating_system: centos6
+    target: x86_64
+    modules:
+      - gcc/6.2.0
+    paths:
+        cc: /apps/gcc/6.2.0/wrapper/gcc
+        cxx: /apps/gcc/6.2.0/wrapper/g++
+        f77: /apps/gcc/6.2.0/wrapper/gfortran
+        fc: /apps/gcc/6.2.0/wrapper/gfortran

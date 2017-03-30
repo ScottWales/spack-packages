@@ -1,0 +1,63 @@
+packages:
+    openmpi:
+        buildable: False
+        modules:
+            openmpi@1.4.3%gcc@4.4.7: openmpi/1.4.3
+            openmpi@1.6.5%gcc@4.4.7: openmpi/1.6.5
+            openmpi@1.7.5%gcc@4.4.7: openmpi/1.7.5
+            openmpi@1.8.8%gcc@4.4.7: openmpi/1.8.8
+            openmpi@1.8.8%gcc@4.4.7 +debug: openmpi/1.8.8-debug
+            openmpi@1.8.8%gcc@4.4.7 +thread_multiple: openmpi/1.8.8-mt
+            openmpi@1.8.8%gcc@4.4.7 +thread_multiple +debug: openmpi/1.8.8-mt-debug
+            openmpi@1.10.3%gcc@4.4.7 +debug: openmpi/1.10.3-debug
+            openmpi@1.10.3%gcc@4.4.7 +thread_multiple: openmpi/1.10.3-mt
+            openmpi@1.10.3%gcc@4.4.7 +thread_multiple +debug: openmpi/1.10.3-mt-debug
+            openmpi@2.0.0%gcc@4.4.7 +debug: openmpi/2.0.0-debug
+            openmpi@2.0.0%gcc@4.4.7 +thread_multiple: openmpi/2.0.0-mt
+            openmpi@2.0.0%gcc@4.4.7 +thread_multiple +debug: openmpi/2.0.0-mt-debug
+
+            openmpi@1.10.3%gcc@4.4.7: openmpi/1.10.3
+            openmpi@2.0.0%gcc@4.4.7: openmpi/2.0.0
+            
+            openmpi@1.4.3%intel@12.1.9.293: openmpi/1.4.3
+            openmpi@1.6.5%intel@12.1.9.293: openmpi/1.6.5
+            openmpi@1.7.5%intel@12.1.9.293: openmpi/1.7.5
+            openmpi@1.8.8%intel@12.1.9.293: openmpi/1.8.8
+            openmpi@1.8.8%intel@12.1.9.293 +debug: openmpi/1.8.8-debug
+            openmpi@1.8.8%intel@12.1.9.293 +thread_multiple: openmpi/1.8.8-mt
+            openmpi@1.8.8%intel@12.1.9.293 +thread_multiple +debug: openmpi/1.8.8-mt-debug
+            openmpi@1.10.3%intel@12.1.9.293 +debug: openmpi/1.10.3-debug
+            openmpi@1.10.3%intel@12.1.9.293 +thread_multiple: openmpi/1.10.3-mt
+            openmpi@1.10.3%intel@12.1.9.293 +thread_multiple +debug: openmpi/1.10.3-mt-debug
+            openmpi@2.0.0%intel@12.1.9.293 +debug: openmpi/2.0.0-debug
+            openmpi@2.0.0%intel@12.1.9.293 +thread_multiple: openmpi/2.0.0-mt
+            openmpi@2.0.0%intel@12.1.9.293 +thread_multiple +debug: openmpi/2.0.0-mt-debug
+
+            openmpi@1.10.3%intel@12.1.9.293: openmpi/1.10.3
+            openmpi@2.0.0%intel@12.1.9.293: openmpi/2.0.0
+
+            openmpi@1.4.3%intel@17.0.1.132: openmpi/1.4.3
+            openmpi@1.6.5%intel@17.0.1.132: openmpi/1.6.5
+            openmpi@1.7.5%intel@17.0.1.132: openmpi/1.7.5
+            openmpi@1.8.8%intel@17.0.1.132: openmpi/1.8.8
+            openmpi@1.8.8%intel@17.0.1.132 +debug: openmpi/1.8.8-debug
+            openmpi@1.8.8%intel@17.0.1.132 +thread_multiple: openmpi/1.8.8-mt
+            openmpi@1.8.8%intel@17.0.1.132 +thread_multiple +debug: openmpi/1.8.8-mt-debug
+            openmpi@1.10.3%intel@17.0.1.132 +debug: openmpi/1.10.3-debug
+            openmpi@1.10.3%intel@17.0.1.132 +thread_multiple: openmpi/1.10.3-mt
+            openmpi@1.10.3%intel@17.0.1.132 +thread_multiple +debug: openmpi/1.10.3-mt-debug
+            openmpi@2.0.0%intel@17.0.1.132 +debug: openmpi/2.0.0-debug
+            openmpi@2.0.0%intel@17.0.1.132 +thread_multiple: openmpi/2.0.0-mt
+            openmpi@2.0.0%intel@17.0.1.132 +thread_multiple +debug: openmpi/2.0.0-mt-debug
+
+            openmpi@1.10.3%intel@17.0.1.132: openmpi/1.10.3
+            openmpi@2.0.0%intel@17.0.1.132: openmpi/2.0.0
+
+    all:
+        compiler:
+            - intel
+            - gcc
+
+        providers:
+            mpi:
+                - openmpi
